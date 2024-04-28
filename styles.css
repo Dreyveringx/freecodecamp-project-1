@@ -1,0 +1,95 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: Tahoma;
+    background-image: url(https://images.wallpaperscraft.com/image/single/magician_dragon_art_131303_1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  h1, h2, p {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    background-color: rgba(11, 13, 23, 0.7);
+}
+
+legend {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    display: block;
+}
+
+fieldset {
+    border: none;
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0 0;
+    border: 1px solid #ffffff;
+    background-color: #0b0d17;
+    color: #ffffff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #ae00ff;
+    outline: none;
+    box-shadow: 0 0 5px #ae00ff;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+
+  input[type="checkbox"],
+  label {
+      display: inline-block;
+  }
+
+  input[type="submit"] {
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+    background-color: #6b2dbd;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ae00ff;
+}

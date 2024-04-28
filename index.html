@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Etheria || Registration Form</title>
+</head>
+<body>
+  <h1 id="title">Etheria</h1>
+  <h2>Registration Form</h2>
+  <p id="description">Welcome to the world of Etheria. Please complete the following form to join the adventure.</p>
+
+  <form id="survey-form">
+     <fieldset>
+      <legend>Personal Information</legend>
+      <label id="name-label" for="name">Player Name:</label>
+      <input id="name" name="name" type="text" placeholder="Enter your player name" required></input>
+    </fieldset>
+
+    <fieldset>
+      <label id="email-label" for="email">Email Adress:</label>
+      <input id="email" name="email" type="email" required placeholder="Ingrese su correo"></input>
+    </fieldset>
+
+    <fieldset>
+      <label id="number-label" for="number">Age:</label>
+      <input id="number" name="number" type="number" required placeholder="Enter your age:" min="13" max="120"></input>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Preferences</legend>
+      <label>Select your experience level:</label>
+        <select id="dropdown" name="dropdown" required>
+          <option value="" selected disabled>(Select your level)</option>
+          <option value="beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+          <option value="Expert">Expert</option>
+        </select> 
+    </fieldset>
+
+    <fieldset>
+      <legend>Race Selection: Choose Your Pat</legend>
+      <label for="race-humans">
+        <input class="inline" id="race-humans" type="radio" name="race" value="humans" checked> Humans
+      </label><br>
+      <label for="race-elves">
+        <input class="inline" id="race-elves" type="radio" name="race" value="elves"> Elves
+      </label><br>
+      <label for="race-dwarves">
+        <input class="inline" id="race-dwarves" type="radio" name="race" value="dwarves"> Dwarves
+      </label><br>
+      <label for="race-orcs">
+        <input class="inline" id="race-orcs" type="radio" name="race" value="orcs"> Orcs
+      </label><br>
+      <label for="race-antropomorphic-beasts">
+        <input class="inline" id="race-antropomorphic-beasts" type="radio" name="race" value="antropomorphic-beasts"> Anthropomorphic Beasts
+      </label><br>
+      <label for="race-elementals">
+        <input class="inline" id="race-elementals" type="radio" name="race" value="elementals"> Elementals
+      </label><br>
+      <label for="race-demons">
+        <input class="inline" id="race-demons" type="radio" name="race" value="demons"> Demons
+      </label><br>
+      <label for="race-angels">
+        <input class="inline" id="race-angels" type="radio" name="race" value="angels"> Angels
+      </label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Select Your Class</legend>
+        <label for="class-warrior">
+          <input class="inline" id="class-warrior" type="radio" name="class" value="warrior" checked/> Warrior
+        </label></br>
+        <label for="class-mage">
+          <input class="inline" id="class-mage" type="radio" name="class" value="mage"/> Mage
+        </label></br>
+        <label for="class-archer">
+          <input class="inline" id="class-archer" type="radio" name="class" value="archer"/> Archer
+        </label></br>
+        <label for="class-warlock">
+          <input class="inline" id="class-warlock" type="radio" name="class" value="warlock"/> Warlock
+        </label></br>
+        <label for="class-monk">
+          <input class="inline" id="class-monk" type="radio" name="class" value="monk"/> Monk
+        </label></br>
+        <label for="class-vampire">
+          <input class="inline" id="class-vampire" type="radio" name="class" value="vampire"/> Vampire
+        </label></br>
+        <label for="class-priest">
+          <input class="inline" id="class-priest" type="radio" name="class" value="priest"/> Priest
+        </label></br>
+        <label for="class-paladin">
+          <input class="inline" id="class-paladin" type="radio" name="class" value="paladin"/> Paladin
+        </label></br>
+        <label for="class-druid">
+          <input class="inline" id="class-druid" type="radio" name="class" value="druid"/> Druid
+        </label></br>
+        <label for="class-shaman">
+          <input class="inline" id="class-shaman" type="radio" name="class" value="shaman"/> Shaman
+        </label></br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select Your Special Abilities</legend>
+        <input type="checkbox" id="ability-fly" name="abilities" value="fly">
+        <label for="ability-fly">Fly</label><br>
+        
+        <input type="checkbox" id="ability-invisibility" name="abilities" value="invisibility">
+        <label for="ability-invisibility">Invisibility</label><br>
+        
+        <input type="checkbox" id="banana" name="abilities" value="banana">
+        <label for="banana">Teleportation</label><br>
+        
+        <input type="checkbox" id="uva" name="abilities" value="uva">
+        <label for="uva">Super Strength</label><br>
+
+        <input type="checkbox" id="uva" name="abilities" value="uva">
+        <label for="uva">Mind Control</label><br>
+
+        <input type="checkbox" id="uva" name="abilities" value="uva">
+        <label for="uva">Time Manipulation</label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Comments</legend>
+      <label for="comments">
+        <textarea id="comments" name="comments" placeholder="Anything else you'd like to share?"></textarea>
+      </label> 
+    </fieldset>
+
+    <input id="submit" type="submit" value="Submit Application" />
+  </form>
+</body>
+</html>
